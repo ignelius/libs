@@ -1,0 +1,1 @@
+function populateVoices(){let e=document.getElementById("ignelius-voice"),n=speechSynthesis.getVoices();e.innerHTML="",n.forEach(n=>{let t=document.createElement("option");t.textContent=`${n.name} (${n.lang})`,t.value=n.name,e.appendChild(t)})}speechSynthesis.onvoiceschanged=populateVoices;
